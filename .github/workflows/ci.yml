@@ -31,5 +31,4 @@ jobs:
               context: .
               push: true
               tags: rauserdockerhub/images:app-${{ github.run_number }}
-              labels: ${{ steps.meta.outputs.labels }}
-
+             
