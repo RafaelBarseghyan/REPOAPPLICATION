@@ -45,6 +45,7 @@ jobs:
           git config user.email rafaelbarseghyan99@gmail.com
           git config user.name RafaelBarseghyan
           pwd
+          ll
           cat REPOARGO/HelmCharts/MyChart1/values_dev.yaml
           pwd
           sed -i "s+rauserdockerhub/images.*+rauserdockerhub/images:app-$RUN_NUMBER+g" REPOARGO/HelmCharts/MyChart1/values_dev.yaml
