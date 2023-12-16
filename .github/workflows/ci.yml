@@ -46,10 +46,10 @@ jobs:
           git config user.name RafaelBarseghyan
           pwd
           ls
-          cat REPOARGO/HelmCharts/MyChart1/values_dev.yaml
+          cat /home/runner/work/REPOAPPLICATION/REPOAPPLICATION/HelmCharts/MyChart1/values_dev.yaml
           pwd
-          sed -i "s+rauserdockerhub/images.*+rauserdockerhub/images:app-$RUN_NUMBER+g" REPOARGO/HelmCharts/MyChart1/values_dev.yaml
-          cat REPOARGO/HelmCharts/MyChart1/values_dev.yaml
+          sed -i "s+rauserdockerhub/images.*+rauserdockerhub/images:app-$RUN_NUMBER+g" /home/runner/work/REPOAPPLICATION/REPOAPPLICATION/HelmCharts/MyChart1/values_dev.yaml
+          cat /home/runner/work/REPOAPPLICATION/REPOAPPLICATION/HelmCharts/MyChart1/values_dev.yaml
           git add .
           git commit -m 'Done  by Github Actions   Job changemanifest: ${{ github.run_number }}'
           git push origin main
