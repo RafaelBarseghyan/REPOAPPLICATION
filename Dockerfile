@@ -5,7 +5,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy the local HTML file to the container
-COPY basicapp.html .
+COPY index.html .
 
 # Expose port 80 for the web server
 EXPOSE 80
