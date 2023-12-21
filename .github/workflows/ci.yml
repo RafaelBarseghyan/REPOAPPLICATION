@@ -3,7 +3,8 @@ name: Application-CI/CD
 on:
   push:
     branches: [ "main" ]
-
+    paths-ignore:
+      - '**/*.md' 
 
 jobs:
   docker:
